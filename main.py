@@ -1,7 +1,8 @@
 from readwrite import get_todos, write_todos
 from time import strftime
 
-print(strftime("It is %b %d, %Y %I:%M:%S"))
+current_time = strftime("%b %d, %Y %I:%M:%S")
+print(f"It is {current_time}")
 
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
